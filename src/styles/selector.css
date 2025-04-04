@@ -1,0 +1,46 @@
+/* RegisterSelector.css */
+
+.selector-container {
+    text-align: center;
+    padding: 2rem;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .selector-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  .options-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .option-card {
+    background-color: #f5f5dc;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .option-card h2 {
+    font-size: 1.3rem;
+    color: #007bff;
+  }
+  
+  .option-card p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  

@@ -41,6 +41,7 @@ function PasswordBox() {
                     }
                     label="Password"
                     fullWidth
+                    required
                 />
             </FormControl>
         </>

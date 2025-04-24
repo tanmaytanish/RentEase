@@ -12,6 +12,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 import FormControl from "@mui/material/FormControl";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import { Link } from "react-router-dom";
 
 function Login() {
     const [showPassword, setShowPassword] = React.useState(false);
@@ -38,7 +39,7 @@ function Login() {
                         <div className="mb-3">
                             <Box sx={{display: "flex", alignItems: "flex-end"}}>
                                 <AccountCircle sx={{color: "action.active", mr: 1, my: 0.5}} />
-                                <TextField id="input-with-sx" label="Username" variant="standard" fullWidth />
+                                <TextField id="input-with-sx" label="Email" variant="standard" fullWidth />
                             </Box>
                         </div>
 
@@ -69,8 +70,10 @@ function Login() {
                         </Button>
 
                         <p className="mt-3 text-center">
-                            New User? <a href="/signup">Sign Up</a>
+                            New User? <a href="/register">Sign Up</a>
                         </p>
+
+                        {/* <Link to="/Signup" className="nav-link">Sign Up</Link> */}
                     </form>
                 </Col>
             </Container>

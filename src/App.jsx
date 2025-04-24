@@ -9,8 +9,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Services from "./pages/Services";
-import RegisterSelector from "./pages/RegisterSelector";
-import RegisterOwner from "./pages/RegisterOwner";
+import OwnerDashboard from "./pages/OwnerDashboard";
+import TenantDashboard from "./pages/TenantDashboard";
 
 
 function App() {
@@ -22,11 +22,10 @@ function App() {
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/about" element={<About/>}/>
                 <Route path="/services" element={<Services/>}/>
-                <Route path="/register" element={<RegisterSelector/>} />
+                <Route path="/register" element={<Signup/>} />
                 {/* <Route path="/" element={<Home/>}/> */}
             </Routes>
-
-            <RegisterOwner/>
+<OwnerDashboard />
             <Footer />
             
         </>

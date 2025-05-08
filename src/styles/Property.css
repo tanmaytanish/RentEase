@@ -1,0 +1,133 @@
+.property-page-container {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    display: flex;
+    gap: 40px;
+  }
+  
+  .property-content-left {
+    flex: 1;
+    max-width: 60%;
+  }
+  
+  .property-content-right {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .property-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    object-fit: cover;
+  }
+  
+  .property-page-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .property-page-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px;
+  }
+  
+  .property-bullets {
+    margin: 0 0 40px 20px;
+    padding: 0;
+    list-style-type: disc;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .tenants-header-wrapper {
+    max-width: 60%;
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+  
+  .tenants-heading {
+    left: 0;
+  }
+  
+  .tenants-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .tenants-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+    position: relative;
+    left: 0;
+  }
+  
+  .add-tenant-button {
+    position: static;
+    margin-bottom: 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-tenant-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .tenants-table-container {
+    position: relative;
+    margin-bottom: 20px;
+    max-width: 60%;
+    padding-left: 40px;
+  }
+  
+  .tenants-table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .tenants-table th,
+  .tenants-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .tenants-table th {
+    background-color: #f0f0f0;
+    font-weight: 600;
+  }
+  
+  .tenants-table tr:last-child td {
+    border-bottom: none;
+  }

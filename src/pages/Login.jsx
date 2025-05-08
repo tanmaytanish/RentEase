@@ -13,8 +13,15 @@ import FormControl from "@mui/material/FormControl";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { Link } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
+
 
 function Login() {
+    const navigate = useNavigate();
+    
+        const goToOwnerDashboard = () => {
+            navigate("/owner-dashboard");
+        };
     const [showPassword, setShowPassword] = React.useState(false);
     const handleClickShowPassword = () => setShowPassword((show) => !show);
 
@@ -65,7 +72,7 @@ function Login() {
                             </FormControl>
                         </div>
 
-                        <Button variant="primary" className="w-100" type="submit">
+                        <Button onClick={goToOwnerDashboard} variant="primary" className="w-100" type="submit">
                             Login
                         </Button>
 
